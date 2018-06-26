@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet type="text/css" href="style.css">
+    <title>Сложение однозначных чисел</title>
+</head>
+
+<body onload="init()">
+    <div class="expression">
+        <span id="num1" class="num1"></span> +
+        <span id="num2" class="num2"></span> =
+        <span id="sum" class="sum">?</span>
+        <input maxlength="2" id="sum-input" class="sum-input" tabindex="3">
+    </div>
+    <div class="axis">
+        <div class="arrow-container">
+            <div class="arrow">
+                <div class="arrow-input-container">
+                    <input maxlength="1" id="num1-input" class="arrow-input" tabindex="1">
+                </div>
+                <div class="arrow-line"></div>
+            </div>
+            <div class="arrow">
+                <div class="arrow-input-container">
+                    <input maxlength="1" id="num2-input" class="arrow-input" tabindex="2">
+                </div>
+                <div class="arrow-line"></div>
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="axis-img"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
