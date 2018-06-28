@@ -2,6 +2,7 @@ var a = randomInteger(6, 9);
 var c = randomInteger(11, 14);
 var b = c - a;
 
+document.body.onload = clearFields;
 document.getElementById("num1").innerHTML = a;
 document.getElementById("num2").innerHTML = b;
 
@@ -69,3 +70,8 @@ function getSum() {
     inputSum.style.color = "red";
   }
 }
+
+
+function clearFields() {
+  Array.prototype.forEach.call(document.getElementsByTagName('input'), function(e) { e.value=''; });
+};

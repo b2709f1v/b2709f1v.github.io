@@ -9,26 +9,64 @@
     <title>Сложение однозначных чисел</title>
 </head>
 
-<body >
+<body>
     <div class="expression">
         <span id="num1" class="num1"></span> +
         <span id="num2" class="num2"></span> =
         <span id="sum" class="sum">?</span>
-        <input maxlength="2" id="sum-input" class="sum-input" tabindex="3" value= "" autocomplete="off" />
+        <input maxlength="2" id="sum-input" class="sum-input" tabindex="3" value="" autocomplete="off" />
     </div>
     <div class="axis">
         <div class="arrow-container">
             <div class="arrow">
                 <div class="arrow-input-container">
-                    <input maxlength="1" id="num1-input" class="arrow-input" tabindex="1" value= "" autocomplete="off" autofocus>
+                    <input maxlength="1" id="num1-input" class="arrow-input" tabindex="1" value="" autocomplete="off" autofocus>
                 </div>
-                <div class="arrow-line"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.9 179">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: red;
+                            }
+
+                            .cls-2 {
+                                fill: red;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1" vector-effect="non-scaling-stroke" d="M0,299a296.19,296.19,0,0,1,37.06-57.14,315.78,315.78,0,0,1,49.69-48.23,333.13,333.13,0,0,1,60-37.16A346.24,346.24,0,0,1,215.45,132a361.52,361.52,0,0,1,151.27-3.74,348.29,348.29,0,0,1,70.4,21.19,336.15,336.15,0,0,1,62.37,34.41,319.77,319.77,0,0,1,52.5,46,300.68,300.68,0,0,1,40.23,55.38q2.71,4.83,5.25,9.75"
+                        transform="translate(0.9 -121)" />
+                    <polygon class="cls-2" vector-effect="non-scaling-stroke" points="587.13 166.49 588.48 165.01 598.18 173.82 596.41 160.84 598.39 160.57 600.9 179 587.13 166.49"
+                    />
+                </svg>
+
             </div>
             <div class="arrow">
                 <div class="arrow-input-container">
-                    <input maxlength="1" id="num2-input" class="arrow-input" tabindex="2"  value= "" autocomplete="off" />
+                    <input maxlength="1" id="num2-input" class="arrow-input" tabindex="2" value="" autocomplete="off" />
                 </div>
-                <div class="arrow-line"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.9 179">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: red;
+                            }
+
+                            .cls-2 {
+                                fill: red;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1" vector-effect="non-scaling-stroke" d="M0,299a296.19,296.19,0,0,1,37.06-57.14,315.78,315.78,0,0,1,49.69-48.23,333.13,333.13,0,0,1,60-37.16A346.24,346.24,0,0,1,215.45,132a361.52,361.52,0,0,1,151.27-3.74,348.29,348.29,0,0,1,70.4,21.19,336.15,336.15,0,0,1,62.37,34.41,319.77,319.77,0,0,1,52.5,46,300.68,300.68,0,0,1,40.23,55.38q2.71,4.83,5.25,9.75"
+                        transform="translate(0.9 -121)" />
+                    <polygon class="cls-2" vector-effect="non-scaling-stroke" points="587.13 166.49 588.48 165.01 598.18 173.82 596.41 160.84 598.39 160.57 600.9 179 587.13 166.49"
+                    />
+                </svg>
+
             </div>
             <div class="clear-both"></div>
         </div>
