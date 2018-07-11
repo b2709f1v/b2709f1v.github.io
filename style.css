@@ -1,34 +1,46 @@
 html {
   height: 100%;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .expression {
   width: 100%;
   height: 100px;
-  font-family: sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .num1,
 .num2 {
-  border-radius: 20%;
+  border-radius: 5px;
+  height: 45px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sum-input {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 40px;
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   border: none;
   text-align: center;
   display: none;
-  border: 1px solid #cecece;
-  border-radius: 3px;
+  border: 2px solid #cecece;
+  border-radius: 5px;
 }
 
-.axis {
+.wrapper {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .axis-img {
@@ -51,7 +63,7 @@ html {
   z-index: 1;
   padding: 0 54px 0 33px;
   width: 800px;
-  margin: -25px auto;
+  margin: 0 auto -25px auto;
 }
 
 .arrow {
@@ -71,19 +83,29 @@ html {
   border: 1px solid #cecece;
   border-radius: 3px;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
 }
 
 svg {
   display: block;
 }
 
-.cls-1{
+.cls-1,
+.cls-2 {
+  fill: none;
+  stroke: red;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+}
+
+.cls-1 {
+  stroke-width: 1px;
   stroke-dasharray: 729;
   stroke-dashoffset: 729;
   animation: dash 5s ease-in-out forwards;
 }
 
-.cls-2{
+.cls-2 {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   animation: dash 5s linear forwards;
@@ -95,7 +117,6 @@ svg {
     stroke-dashoffset: 0;
   }
 }
-
 
 .arrow-1 {
   width: 5%;

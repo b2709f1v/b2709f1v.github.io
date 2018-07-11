@@ -6,82 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel=stylesheet type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
     <title>Сложение однозначных чисел</title>
 </head>
 
 <body>
     <div class="expression">
-        <span id="num1" class="num1"></span> +
-        <span id="num2" class="num2"></span> =
-        <span id="sum" class="sum">?</span>
+        <div id="num1" class="num1"></div> +
+        <div id="num2" class="num2"></div> =
+        <div id="sum" class="sum">?</div>
         <input maxlength="2" id="sum-input" class="sum-input" tabindex="3" value="" autocomplete="off" />
     </div>
-    <div class="axis">
-        <div class="arrow-container">
-            <div class="arrow">
-                <div class="arrow-input-container">
-                    <input maxlength="1" id="num1-input" class="arrow-input" tabindex="1" value="" autocomplete="off" autofocus>
+    <div class="wrapper">
+        <div class="axis">
+            <div class="arrow-container">
+                <div class="arrow">
+                    <div class="arrow-input-container">
+                        <input maxlength="1" id="num1-input" class="arrow-input" tabindex="1" value="" autocomplete="off" autofocus>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.56 63.56">
+                        <path class="cls-1" d="M255,191.65a103.89,103.89,0,0,1,15.56-19.9A125.41,125.41,0,0,1,291.44,155,147.27,147.27,0,0,1,316.63,142a165.26,165.26,0,0,1,28.86-8.53A179.79,179.79,0,0,1,377,130,182.58,182.58,0,0,1,409,132.17a170.1,170.1,0,0,1,29.57,7.38,152,152,0,0,1,26.2,12,130.36,130.36,0,0,1,22,16,108,108,0,0,1,16.9,19.3q1.72,2.53,3.27,5.15"
+                            transform="translate(-254.44 -129.44)" />
+                        <line class="cls-2" x1="253.06" y1="53.06" x2="253.06" y2="63.06" />
+                        <line class="cls-2" x1="244.06" y1="59.06" x2="253.06" y2="63.06" />
+                    </svg>
                 </div>
+                <div class="arrow">
+                    <div class="arrow-input-container">
+                        <input maxlength="1" id="num2-input" class="arrow-input" tabindex="2" values="" autocomplete="off" />
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.56 63.56">
+                        <path class="cls-1" d="M255,191.65a103.89,103.89,0,0,1,15.56-19.9A125.41,125.41,0,0,1,291.44,155,147.27,147.27,0,0,1,316.63,142a165.26,165.26,0,0,1,28.86-8.53A179.79,179.79,0,0,1,377,130,182.58,182.58,0,0,1,409,132.17a170.1,170.1,0,0,1,29.57,7.38,152,152,0,0,1,26.2,12,130.36,130.36,0,0,1,22,16,108,108,0,0,1,16.9,19.3q1.72,2.53,3.27,5.15"
+                            transform="translate(-254.44 -129.44)" />
+                        <line class="cls-2" x1="253.06" y1="53.06" x2="253.06" y2="63.06" />
+                        <line class="cls-2" x1="244.06" y1="59.06" x2="253.06" y2="63.06" />
+                    </svg>
 
-                <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.56 63.56">
-                    <defs>
-                        <style>
-                            .cls-1,
-                            .cls-2 {
-                                fill: none;
-                                stroke: red;
-                                stroke-linecap: round;
-                                stroke-linejoin: bevel;
-                            }
-
-                            .cls-1 {
-                                stroke-width: 1px;
-                            }
-                        </style>
-                    </defs>
-                    <title>Безымянный-2 [Восстановлен]</title>
-                    <path class="cls-1" d="M255,191.65a103.89,103.89,0,0,1,15.56-19.9A125.41,125.41,0,0,1,291.44,155,147.27,147.27,0,0,1,316.63,142a165.26,165.26,0,0,1,28.86-8.53A179.79,179.79,0,0,1,377,130,182.58,182.58,0,0,1,409,132.17a170.1,170.1,0,0,1,29.57,7.38,152,152,0,0,1,26.2,12,130.36,130.36,0,0,1,22,16,108,108,0,0,1,16.9,19.3q1.72,2.53,3.27,5.15"
-                        transform="translate(-254.44 -129.44)" />
-                    <line class="cls-2" x1="253.06" y1="53.06" x2="253.06" y2="63.06" />
-                    <line class="cls-2" x1="244.06" y1="59.06" x2="253.06" y2="63.06" />
-                </svg>
-            </div>
-            <div class="arrow">
-                <div class="arrow-input-container">
-                    <input maxlength="1" id="num2-input" class="arrow-input" tabindex="2" values="" autocomplete="off" />
                 </div>
-
-                <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.56 63.56">
-                    <defs>
-                        <style>
-                            .cls-1,
-                            .cls-2 {
-                                fill: none;
-                                stroke: red;
-                                stroke-linecap: round;
-                                stroke-linejoin: bevel;
-                                
-                            }
-
-                            .cls-1 {
-                                stroke-width: 1px;
-                            }
-                        </style>
-                    </defs>
-                    <title>Безымянный-2 [Восстановлен]</title>
-                    <path class="cls-1" d="M255,191.65a103.89,103.89,0,0,1,15.56-19.9A125.41,125.41,0,0,1,291.44,155,147.27,147.27,0,0,1,316.63,142a165.26,165.26,0,0,1,28.86-8.53A179.79,179.79,0,0,1,377,130,182.58,182.58,0,0,1,409,132.17a170.1,170.1,0,0,1,29.57,7.38,152,152,0,0,1,26.2,12,130.36,130.36,0,0,1,22,16,108,108,0,0,1,16.9,19.3q1.72,2.53,3.27,5.15"
-                        transform="translate(-254.44 -129.44)" />
-                    <line class="cls-2" x1="253.06" y1="53.06" x2="253.06" y2="63.06" />
-                    <line class="cls-2" x1="244.06" y1="59.06" x2="253.06" y2="63.06" />
-                </svg>
-
+                <div class="clear-both"></div>
             </div>
-            <div class="clear-both"></div>
+            <div class="axis-img"></div>
         </div>
-        <div class="axis-img"></div>
     </div>
     <script src="script.js"></script>
-
 </html>
 </body>
 

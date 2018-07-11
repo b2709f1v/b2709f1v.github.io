@@ -36,14 +36,13 @@ function getN1() {
     arrows[1].classList.add(className + b);
     inputNum2.focus();
   } else {
-    document.querySelector(".num1").style.backgroundColor = "yellow";
+    document.querySelector(".num1").style.backgroundColor = "#f9b134";
     inputNum1.style.color = "red";
   }
 }
 
 function getN2() {
   var bInput = inputNum2.value;
-  console.log(bInput);
   if (bInput == b) {
     inputNum2.readOnly = true;
     inputNum2.style.border = "none";
@@ -54,14 +53,13 @@ function getN2() {
     inputSum.style.display = "inline-block";
     inputSum.focus();
   } else {
-    document.querySelector(".num2").style.backgroundColor = "yellow";
+    document.querySelector(".num2").style.backgroundColor = "#f9b134";
     inputNum2.style.color = "red";
   }
 }
 
 function getSum() {
   var sumInput = inputSum.value;
-  console.log(sumInput);
   if (sumInput == c) {
     inputSum.readOnly = true;
     inputSum.style.border = "none";
